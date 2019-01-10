@@ -2,6 +2,6 @@
   <% @students.each do |student| %>
     <div><%= student.to_s %></div>
     <!-- <a href= '<%=student_path(student)%>'>see this student</a> -->
-    <div><%= link_to student.to_s student_path(post.id) %></div>
+    <div><%= link_to student.to_s student_path(student) %></div>
   <% end %>
 </div>
