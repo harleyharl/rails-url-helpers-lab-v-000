@@ -1,7 +1,7 @@
 <div>
   <% @students.each do |student| %>
   <%binding.pry%>
-    <div><%= student.first_name + " " + student.last_name %></div>
+    <div><%= student.to_s %></div>
     <!-- <a href= '<%=student_path(student)%>'>see this student</a> -->
     <%= link_to student.first_name student_path(student) %>
   <% end %>
